@@ -1,0 +1,89 @@
+
+.about-presentation{
+   
+    background-color:var(--article-color);
+    color: var( --text-isWhite);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.presentation-text{
+    display: flex;
+    flex-direction: column;
+    gap: .2rem 0;
+}
+.presentation-text h2{
+    color: var(--text-isWhite);
+    z-index: 0;
+}
+.presentation-text h2 span{
+    color: var(--text-isWhite);
+    z-index: 0;
+    font-weight: bold;
+}
+.presentation-text h1{
+    color: var(--text-principal);
+    font-size: 3rem;
+    font-style: italic;
+    font-weight: 700;
+    z-index: 0;
+}
+.location{
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+}
+.presentation-btn-container{
+    display: flex;
+}
+.btn-presentation{
+    border: 0;
+    margin: 0 .2rem;
+    border-radius: 10px;
+    color: var(--text-isWhite);
+    font-size: .8rem;
+    background-color: var(--is-gray);
+    backdrop-filter: blur(100px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 360px;
+}
+.btn-presentation a{
+    color: var(--text-isWhite);
+    text-decoration: none;
+}
+.btn-presentation:hover{
+    background-color: rgb(49, 48, 48);
+    
+}
+
+.presentation-btn-container img{
+    object-fit: contain;
+    width: 60%;
+}
+.presentation-picture{
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    border-radius: 360px;
+    overflow: hidden;
+    background: var(--me-xd);
+}
+.presentation-picture img{
+    
+    width: 100%;
+    object-fit: cover;
+}
+
+#dsweb{
+    filter: none;    
+}

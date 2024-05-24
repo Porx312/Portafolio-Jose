@@ -1,0 +1,103 @@
+/* MENU */
+.menu{
+    background-color:var(--article-color);
+    color: var( --text-isWhite);
+    border-radius: 10px;
+   position: sticky;
+   top: 0px;
+
+}
+
+.menu nav{
+    padding: 1rem;
+    gap: 0 1.2rem;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu nav ul{
+
+    gap: 0 1.2rem;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    transition: all .2s ease;
+}
+ nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: .98rem;
+    font-weight: 500;
+    
+}
+nav ul li a:hover{
+    color: var(--text-principal);
+}
+.scrolled{
+    background-color:transparent;
+    backdrop-filter: blur(100px);
+    border-radius: 25px;
+    overflow: hidden;
+    top: -10px;
+    margin-top: 20px;
+    z-index: 100;
+    
+}
+
+.btn-sun{
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+}
+.btn-sun img{
+    width: 100%;
+}
+
+.btn-hamburguer{
+    border: 0;
+    background-color: transparent;
+    display: none;
+    cursor: pointer;
+    transition: all .2s ease;
+}
+.btn-hamburguer:hover{
+    transform: scale(1.1);
+}
+@media (max-width: 750px) {
+    .scrolled nav ul li a{
+        font-size: .7rem;
+    }
+    .scrolled nav ul{
+        display: none;
+    }
+    .menu nav ul{
+        display: none;
+
+    }
+    .btn-hamburguer{
+        display: block;
+    }
+    .scrolled nav{
+        padding: 0 .6rem;
+        padding-top: .5rem;
+    }
+    .menuopen{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .menuopen .btn-hamburguer{
+        display: none;
+    }
+    .menuopen nav ul{
+display: flex;
+flex-direction: column;
+gap:.5rem;
+    }
+    }

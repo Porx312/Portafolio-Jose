@@ -1,0 +1,89 @@
+   /* experiencia laboral */
+   .experiencia-laboral{
+    
+    background-color:var(--article-color);
+    color: var( --text-isWhite);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 1rem 10rem;
+    gap: 1rem 0;
+
+}
+.experience-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+.experience-text{
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+    
+}
+.experience-card{
+    flex-wrap: wrap;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    margin: .8rem 0;
+    justify-content: center;
+    align-items: center;    
+    gap: .8rem 3rem;
+    background-color: var(--is-gray);
+    padding: 1rem;
+    border-radius: 20px;
+    
+
+}
+.experience-card h2{
+    color: var(--text-principal);
+    font-size: 1rem;
+}
+.experience-card .job p{
+    font-size: .8rem;
+    color: rgb(196, 199, 199);
+}
+.experience-card .job h3{
+    font-size: .9rem;
+}
+
+.asignation{
+    flex-basis: 600px;
+}
+.asignation p {
+font-size: .9rem;
+}
+.experience-card button{
+    border: 0;
+    border-radius: 10px;
+    padding: .4rem;
+    color:rgb(255, 255, 255);
+    background-color: rgb(2, 15, 26,.4);
+    margin: .2rem 0;
+}
+.resume-study{
+    height: 400px;
+    background-color:rgba(117, 91, 251, 0.1);
+    border-radius: 10px;
+}
+.work-active, .work-desactive{
+width: 10px;
+height: 10px;
+background: rgb(0, 255, 0);
+border-radius: 360px;
+}
+
+.work-desactive{
+    background-color: red;
+}
+
+.job{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+

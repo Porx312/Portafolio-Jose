@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,700&display=swap');
+@font-face {
+    src: url(./assets/PixelifySans-VariableFont_wght.ttf);
+    font-family: minecraft; /* Corregido: cambia "minecraf" a "minecraft" */
+}
+:root{
+    --text-principal: rgb(255, 221, 0);
+    --content-color:linear-gradient(90deg, rgb(1, 7, 29) 0%, rgb(3, 10, 51) 50%, rgb(0, 0, 0) 100%);;
+    --text-isWhite:#fff;
+    --is-gray:rgba(14, 13, 13, 0.7);
+    --me-xd:linear-gradient(90deg, rgba(89,69,255,1) 0%, rgba(24,7,142,1) 100%);
+    --is-textSection: rgb(255, 255, 255);
+}
+
+h1,h2{
+    filter: drop-shadow(5px 0  black);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    /* font-family: 'Figtree', sans-serif; */
+    /* font-family: "minecraft"; */
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    background:var(--content-color);
+    padding: 2rem 20rem;
+    gap: 1.3rem 0;
+}
+
+.content.lightmode, .content.lightmode h2, .content.lightmode h3{
+    --content-color:linear-gradient(90deg, rgb(49, 94, 156) 0%, rgb(62, 62, 201) 50%, rgb(147, 163, 184) 100%);
+    --text-isWhite:rgb(255, 255, 255);
+    --is-gray:rgba(37, 38, 39, 0.2);
+    --me-xd:linear-gradient(90deg, rgb(0, 132, 255) 0%, rgb(141, 165, 218) 100%);
+    filter:none;
+    --is-textSection: rgb(255, 255, 255);
+}
+
+
+
+@media (max-width: 1350px) {
+  .content{
+    padding: 2rem 10rem;
+  }
+  .experience-card{
+    flex-wrap: wrap;
+    justify-content: start;
+    padding-inline: 3rem;
+  
+
+}
+.experiencia-laboral{
+    padding: 1rem;
+}
+.card-skills .item{
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.projects-card{
+    padding-inline: 1rem;
+}
+  }
+  
+  @media (max-width: 750px) {
+    .content{
+      padding: 2rem 4rem;
+    }
+    .experience-card{
+        flex-wrap: wrap;
+        color: white;
+        display: flex;
+        flex-direction: row;
+        padding-inline: 2rem;
+     
+    
+    }
+    .about-presentation{
+   
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 1rem;
+        gap: 1rem;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .presentation-text{
+        display: flex;
+        flex-direction: column;
+        gap: .2rem 0;
+    }
+    .presentation-text h2{
+        color: var(--text-isWhite);
+        font-size: 1rem;
+    }
+    .presentation-text h1{
+        color: var(--text-principal);
+        font-size: 2rem;
+        font-weight: 700;
+        
+    }
+    .presentation-btn-container{
+        display: flex;
+        align-items: center;
+        
+    }
+     .btn-presentation{
+        border: 0;
+        margin: 0 .2rem;
+        width: 25px;
+        height: 25px;
+        border-radius: 10px;
+        color: var(--text-isWhite);
+        font-size: .1rem .1rem;
+       
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+  
+    .presentation-picture{
+        
+        width: 80px;
+        height: 80px;
+    }
+    .presentation-picture img{
+        
+        width: 100%;
+        object-fit: cover;
+    }
+    .contact-card a{
+    
+        font-size: .8rem;
+     
+    }
+    .contact-card button{
+      
+        font-size: .9rem;
+    }
+    }
+
+    @media (max-width: 500px) {
+        .content{
+          padding: 2rem .6rem;
+        }
+        .contact-card a{
+            padding: .6rem;
+            font-size: .7rem;
+         
+        }
+        .card-skills .item{
+            width: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .contact-card button{
+          padding: .6rem;
+            font-size: .7rem;
+        }
+        .footer{
+            background-color:var(--article-color);
+
+            border-radius: 10px;
+            padding: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .footer p{
+            color: rgb(255, 255, 255,.6);
+            font-size: .8rem;
+        }
+        .footer p a{
+            text-decoration: none;
+            cursor: pointer;
+            color: #0953ff;
+            font-size: .8rem;
+            font-weight: 400;
+        }
+        
+        }
+        @media (max-width: 180px) {
+            .content{
+              padding: 2rem .2rem;
+            }
+            .card-skills .item{
+                width: 30px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            }

@@ -1,0 +1,100 @@
+
+.about-me{
+    background-color:var(--article-color);
+    color: var( --text-isWhite);
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    
+}
+
+.about-me .about-me-text{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+.card-aboutmetext{
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    margin: 0;
+
+}
+.card-aboutmetext p{
+    font-size: 1rem;
+    max-width: 700px;
+}
+.card-aboutmetext p span{
+    color: var(--text-principal);
+    font-weight: 700;
+}
+
+.card-about-me{
+    display: flex;
+    gap: 2rem;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.aboutme-picture{
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    max-width: 300px;
+}
+.aboutme-picture img{
+    width: 100%;
+    object-fit: cover;    
+}
+
+#js{
+    color: rgb(255, 230, 0);
+    font-style: italic;
+    font-weight: bold;
+
+}
+
+#html{
+    font-style: italic;
+    font-weight: bold;
+
+color: rgb(255, 115, 0);
+}
+
+#css{
+    font-style: italic;
+    font-weight: bold;
+    color: rgb(7, 178, 230);
+}
+#ex{
+    font-style: italic;
+    font-weight: bold;
+    color: rgb(203, 205, 206);
+}
+#node{
+    font-style: italic;
+    font-weight: bold;
+    color: rgb(24, 228, 5);
+}
+#md{
+    font-style: italic;
+    font-weight: bold;
+    color: rgb(142, 241, 12);
+}
+#react{
+    font-style: italic;
+    font-weight: bold;
+    color: rgb(10, 138, 243);
+}
+
+#meB{
+    font-weight: bold;
+    color: #ffffff;
+    font-style: italic;
+}

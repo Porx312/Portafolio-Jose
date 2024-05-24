@@ -1,0 +1,206 @@
+/* habilidades */
+
+.habilidades-tecnicas{
+    background-color:var(--article-color);
+    color: var( --text-isWhite);
+    border-radius: 10px;
+    display: flex;
+    padding: 2rem;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+.habilidades-tecnicas h2{
+    color: white;
+    font-size: 2rem;
+} 
+.cubo{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    transform-style:preserve-3d;
+    animation: rotars 15s infinite alternate;
+}
+.cuboActive{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    transform-style:preserve-3d;
+}
+.cubo.cubo.Aprendiendo{
+    animation: none;
+}
+.cubo.Habilidades{
+    animation: none;
+}
+
+
+.cubo div, .cuboActive div{
+    position: absolute;
+    width: 230px;
+
+    height: 230px;
+  
+    background-color: var(--is-gray);
+    border: 2;
+    border-radius: 20px;
+    backface-visibility: hidden;
+}
+
+
+.cubo-card-skills-content{
+display: flex;
+flex-direction: column;
+
+align-items: center;
+padding: 1rem;
+gap:1rem;
+}
+.cubo-card-skills-content h2{
+    font-size: 1.3rem;
+}
+.cubo-card-skills-content article{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+
+    gap: 0.2rem 1rem;
+}
+    .cubo-card-skills-content article picture{
+        width: 3rem;
+    }
+    .cubo-card-skills-content article picture img{
+        width: 100%;
+    }
+.cubo .front{
+    transform: translateZ(150px);
+    
+}
+
+.cubo .back{
+    transform:  scaleY(-1) scaleX(-1) rotateX(180deg) translateZ(150px);
+
+}
+
+.cubo .right{
+       transform:  rotateY(-90deg) translateZ(150px);
+
+
+}
+
+.cubo .left{
+    
+    transform:  rotateY(90deg) translateZ(150px);
+}
+
+
+.cubo .up, .cuboActive .up{
+    transform: rotateX(90deg) translateZ(150px);
+}
+
+
+.cubo .down, .cuboActive .down{
+    transform: rotateX(-90deg) translateZ(150px);
+}
+
+.cuboActive.Aprendiendo .back {
+    transform: translateZ(150px); 
+}
+.cuboActive.Aprendiendo .front{
+    transform:  scaleY(-1) scaleX(-1) rotateX(180deg) translateZ(150px);
+
+}
+.cuboActive.Aprendiendo .left, .cuboActive.Aprendiendo .right{
+    opacity: 0;
+}
+
+.cuboActive.Habilidades .front{
+    transform: translateZ(150px);
+}
+.cuboActive.Habilidades .back{
+    transform:  scaleY(-1) scaleX(-1) rotateX(180deg) translateZ(150px);
+}
+
+.cuboActive.Habilidades .left, .cuboActive.Habilidades .right{
+    opacity: 0;
+}
+
+.cuboActive.Extras .right{
+       
+       transform: translateZ(150px);
+}
+.cuboActive.Extras .front{
+    transform:  rotateY(-90deg) translateZ(150px);
+}
+.cuboActive.Extras .back, .cuboActive.Extras .left{
+    opacity: 0;
+}
+.cuboActive.Herramientas .left{    
+    transform: translateZ(150px);
+}
+
+.cuboActive.Herramientas .front{
+    transform:  rotateY(90deg) translateZ(150px);
+}
+.cuboActive.Herramientas .back, .cuboActive.Herramientas .right{
+    opacity: 0;
+}
+
+@keyframes rotars{
+    50%{
+        transform: rotateY(-390deg) ;
+    }
+}
+
+
+.menu-habilidades ul{
+display: flex;
+color: white;
+background-color: var(--is-gray);
+backdrop-filter: blur(100px);
+
+list-style-type: none;
+margin: 1rem;
+border-radius: 10px;
+overflow: hidden;
+}
+.menu-habilidades ul li {
+    padding: .6rem .8rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.menu-habilidades ul li:hover {
+    height: 100%;
+    color: var(--text-principal);
+}
+
+.card-skills{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem;
+}
+.card-skills .item{
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card-skills .item img{
+    width: 100%;
+}
+
+.card-skills .item-html img{
+    width: 90%;
+}
+@media (max-width: 700px){
+    .menu-habilidades ul li{
+        font-size: .7rem;
+    }
+   
+    
+}
