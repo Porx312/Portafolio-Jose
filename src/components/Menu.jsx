@@ -5,6 +5,7 @@ import moon from "../assets/lightdark/moon.png"
 import iconblack from "../assets/lightdark/iconblack.svg"
 import iconlight from "../assets/lightdark/iconlight.svg"
 import { isDarkOrLight } from "../DarkModeContext";
+import { MeteorDemo } from "./magicui/MeteorDemo";
 const Menu = () => {
   const [scrolled, setScrolled] = useState(false);
   const { isLight, setIsLight } = useContext(isDarkOrLight);
@@ -48,6 +49,7 @@ const Menu = () => {
  
   return (
     <header className={scrolled ? (btnisopen ? "scrolled menu menuopen" : "scrolled menu menuclose") : (btnisopen ? "menu menuopen" : "menu menuclose")}>
+      <MeteorDemo>
 
        <nav>
        <button onClick={() => setBtnIsOpen(!btnisopen)} className="btn-hamburguer">
@@ -94,6 +96,7 @@ const Menu = () => {
       
 
       </nav>
+      </MeteorDemo>
     </header>
   );
 };

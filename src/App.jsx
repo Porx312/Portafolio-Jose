@@ -10,16 +10,15 @@ import Proyectos from "./components/Proyectos"
 import SobreMi from "./components/SobreMi"
 import { isDarkOrLight } from "./DarkModeContext"
 import "./tailwind/output.css"
-import { MeteorDemo } from "./components/magicui/MeteorDemo"
 
 function App() {
   const {isLight} = useContext(isDarkOrLight)
   
   return (
      
-      <MeteorDemo>
     <main className={isLight ? "content lightmode" : "content"}>
    <Menu/>
+
      <Inicio/>
      <Proyectos/>
      <Experiencia/>
@@ -29,7 +28,6 @@ function App() {
      <Footer/>
     </main>
 
-    </MeteorDemo>
 
   )
 }

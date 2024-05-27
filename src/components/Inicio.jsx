@@ -4,6 +4,7 @@ import correo from "../assets/correo.png";
 import github from "../assets/xd.png";
 import "./inicio.css";
 import GradualSpacing from "./magicui/gradual-spacing";
+import { MeteorDemo } from "./magicui/MeteorDemo";
 
 const Inicio = () => {
   const [data, setData] = useState({});
@@ -22,7 +23,8 @@ const Inicio = () => {
   }, []);
 
   return (
-    <section id="inicio" className="about-presentation">
+      <MeteorDemo classid="about-presentation" idx="inicio">
+
       <div className="presentation-text">
         <h2 className="presentation-h2">Soy <span>Jose Blanco</span></h2>
         <h1 id="dsweb"><GradualSpacing text="Desarrollador web"></GradualSpacing></h1>
@@ -43,7 +45,7 @@ const Inicio = () => {
       <div className="presentation-picture">
         <img src={data.avatar_url} alt="jose blanc"/>
       </div>
-    </section>
+      </MeteorDemo>
   );
 };
 

@@ -1,11 +1,11 @@
 import Meteors from "./meteors";
 import React from "react";
 import "./meteor.css"
-export function MeteorDemo({children}) {
+export function MeteorDemo({children,idx,classid}) {
   return (
-    <main id="meteor" className={" flex items-center justify-center overflow-hidden  border " }>
+    <section id={idx} className={`${classid} meteor overflow-hidden  border `  }>
       <Meteors number={30} />
         {children}
-    </main>
+    </section>
   );
 }
