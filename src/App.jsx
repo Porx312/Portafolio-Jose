@@ -20,9 +20,9 @@ function App() {
    <Menu/>
 
      <Inicio/>
+     <Habilidades/>
      <Proyectos/>
      <Experiencia/>
-     <Habilidades/>
      <SobreMi/>
      <Contacto/>
      <Footer/>
