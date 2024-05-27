@@ -34,8 +34,7 @@
     border-radius: 20px;
     padding-inline: 1.3rem;
     margin-top: 1rem;
-    background: linear-gradient(90deg, rgb(13, 2, 78,.5) 10%, rgb(32, 5, 238,.1) 100%);
-
+    border: .5px solid rgb(255, 255, 255);
 }
 .projects-card .img{
     overflow: hidden;
@@ -130,3 +129,5 @@ cursor: pointer;
     width: 20px;
     object-fit: cover;
 }
+
+
