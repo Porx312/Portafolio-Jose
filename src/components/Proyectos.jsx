@@ -10,7 +10,6 @@ const Proyectos = () => {
   return (
     <section id="proyectos" className="projects">
       
-    <h2 className="projects-text">Proyectos</h2>
     <section className="proyect-content">
     <article className="projects-card card">
        <div className="img">

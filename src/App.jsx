@@ -10,6 +10,7 @@ import Proyectos from "./components/Proyectos"
 import SobreMi from "./components/SobreMi"
 import { isDarkOrLight } from "./DarkModeContext"
 import "./tailwind/output.css"
+import { Skills } from "./components/Skills"
 
 function App() {
   const {isLight} = useContext(isDarkOrLight)
@@ -20,7 +21,7 @@ function App() {
    <Menu/>
 
      <Inicio/>
-     <Habilidades/>
+     <Skills/>
      <Proyectos/>
      <Experiencia/>
      <SobreMi/>

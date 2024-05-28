@@ -1,0 +1,19 @@
+.skills{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+    margin: 0;
+}
+
+
+    
+   @media (max-width: 1350px) {
+    .skills{
+        padding: 0;
+        transform: scale(.7);
+    }
+
+   }
