@@ -1,2 +1,24 @@
+.skill{
+    display: flex;
+    flex-direction: column;
+}
+.skillitem{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    padding: 1rem;
+    ;
+}
+.skillitemmain{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
 
-  
+.skillitemXD{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    gap: 1rem;
+}

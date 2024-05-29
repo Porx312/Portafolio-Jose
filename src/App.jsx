@@ -21,9 +21,9 @@ function App() {
    <Menu/>
 
      <Inicio/>
+     <Experiencia/>
      <Skills/>
      <Proyectos/>
-     <Experiencia/>
      <SobreMi/>
      <Contacto/>
      <Footer/>
