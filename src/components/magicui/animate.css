@@ -20,5 +20,27 @@
     display: flex;
     justify-content: space-around;
     width: 100%;
-    gap: 1rem;
+}
+.item-circle{
+    width: 60px;
+    height: 60px;
+    padding: 0;
+}
+.item-circle img{
+    min-width: 100%;
+    object-fit: contain;
+}
+
+@media (max-width: 300px) {
+    .item-circle{
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media (max-width: 220px) {
+    .item-circle{
+        width: 25px;
+        height: 25px;
+    }
 }

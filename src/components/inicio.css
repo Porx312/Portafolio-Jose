@@ -28,6 +28,7 @@
 }
 .presentation-text h1{
     color: var(--text-principal);
+    word-wrap:normal;
     font-size: 3rem;
     font-style: italic;
     font-weight: 700;
@@ -86,4 +87,12 @@
 
 #dsweb{
     filter: none;    
+}
+
+@media (max-width: 300px) {
+    .presentation-text h1{
+       
+        font-size: 1rem;
+      
+    }
 }

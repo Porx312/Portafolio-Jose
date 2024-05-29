@@ -56,7 +56,7 @@ export function AnimatedBeamMultipleOutputDemo({
   return (
     <div
       className={cn(
-        "skill relative flex w-full items-center justify-center overflow-hidden rounded-lg  p-10 md:shadow-xl",
+        "skill relative flex w-full items-center justify-center overflow-hidden rounded-lg  md:shadow-xl",
         className,
       )}
       ref={containerRef}
@@ -77,6 +77,7 @@ export function AnimatedBeamMultipleOutputDemo({
     </div>
 
       <div className="skillitem flex h-full w-full flex-row items-stretch justify-between gap-10">
+      <div className="skillitemXD">
      
           <Circle ref={div1Ref}>
           <img src={github} alt={github}  className="h-6 w-6" />
@@ -91,6 +92,7 @@ export function AnimatedBeamMultipleOutputDemo({
           <img src={azure} alt={azure}  className="h-6 w-6" />
           </Circle>
   
+      </div>
       </div>
       <div className="skillitemmain flex h-full w-full flex-row items-stretch justify-between gap-10">
       
@@ -271,12 +273,7 @@ export function AnimatedBeamMultipleOutputDemo({
         toRef={divbackendRef}
         duration={3}
       />
-         <AnimatedBeam
-        containerRef={containerRef}
-        fromRef={divbackendRef}
-        toRef={divuserRef}
-        duration={4}
-      />
+       
           <AnimatedBeam
         containerRef={containerRef}
         fromRef={div6Ref}
@@ -375,6 +372,29 @@ export function AnimatedBeamMultipleOutputDemo({
         fromRef={div16Ref }
         toRef={divdatabaseRef}
         duration={3}
+      />
+      <AnimatedBeam
+        containerRef={containerRef}
+        fromRef={div15Ref}
+        toRef={divdatabaseRef }
+        duration={3.1}
+        reverse
+      />
+        <AnimatedBeam
+        containerRef={containerRef}
+        fromRef={div16Ref }
+        reverse
+        toRef={divdatabaseRef}
+        duration={4}
+      />
+        <AnimatedBeam
+        containerRef={containerRef}
+        fromRef={divdatabaseRef}
+        toRef={divuserRef}
+        duration={3.1}
+        reverse
+        curvature={32}
+        endYOffset={-10}
       />
       {/* frontend */}
     
