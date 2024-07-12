@@ -22,7 +22,7 @@ function App() {
 
      <Inicio/>
      <Experiencia/>
-     <Skills/>
+    <Habilidades/>
      <Proyectos/>
      <SobreMi/>
      <Contacto/>
